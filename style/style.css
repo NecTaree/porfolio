@@ -1,14 +1,16 @@
 /* imports */
 /* variables */
 :root {
-    --back: #9c9c9c;
-    --color1: #e0e2db;
+    --back: #F2F3F7;
+    --body-text: #2E3532;
+    --primary-yellow: #F5E269;
+    /* --color1: #e0e2db;
     --color2: #f6eee3;
     --color3: #ebddca;
     --color4: #7a808c;
     --color5: #f5e269;
     --color6: #fdbb45;
-    --color7: #f59711;
+    --color7: #f59711; */
 }
 * {
     padding: 0;
@@ -17,68 +19,50 @@
 }
 body {
     background-color: var(--back);
+    font-family: 'Outfit', sans-serif;
 }
 
 /* Header */
-.header-container {
+header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: end;
     align-items: center;
     padding: 1rem;
-    background-color: var(--color3);
+    background-color: var(--back);
 }
 
-.icon-main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--color2);
-    border-radius: 2rem;
-}
-
-.icon-main span {
-    color: var(--back);
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.link-container {
-    top: 5rem;
+nav ul {
     position: fixed;
+    top: 4rem;
+    right: -100%;
+    background-color: var(--primary-yellow);
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    background: var(--color3);
-    right: -100%;
-    transition: all 1.5s;
+    gap: 3rem;
+    width: 100%;
+    min-height: 100vh;
     z-index: 1;
-    border-radius: 0 0 0 1rem;
+    transition: all 1s;
 }
 
-.link-container li {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 40px;
-    line-height: 25px;
+nav ul li {
     list-style: none;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.link-container li a {
+nav ul li a {
     text-decoration: none;
-    color: var(--color2);
+    color: var(--body-text);
     font-size: 1rem;
     font-weight: 700;
     transition: all 0.3s;
 }
 
-.link-container li a:focus,
-.link-container li a:hover {
+nav ul li a:focus,
+nav ul li a:hover {
     color: var(--color4);
 }
 
@@ -87,7 +71,7 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px;
-    background-color: var(--color2);
+    background-color: var(--body-text);
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.6s ease;
@@ -110,5 +94,5 @@ body {
 }
 .no-move {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    /*background-color: rgba(0, 0, 0, 0.6);*/
 }
