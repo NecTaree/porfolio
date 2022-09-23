@@ -1,10 +1,10 @@
 /* imports */
 /* variables */
 :root {
-    --back: #F2F3F7;
-    --body-text: #2E3532;
-    --primary-yellow: #F5E269;
-    /* --color1: #e0e2db;
+  --back: #f2f3f7;
+  --body-text: #2e3532;
+  --primary-yellow: #f5e269;
+  /* --color1: #e0e2db;
     --color2: #f6eee3;
     --color3: #ebddca;
     --color4: #7a808c;
@@ -13,86 +13,164 @@
     --color7: #f59711; */
 }
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    background-color: var(--back);
-    font-family: 'Outfit', sans-serif;
+  background-color: var(--back);
+  font-family: "Outfit", sans-serif;
 }
 
 /* Header */
 header {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--back);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--back);
+  padding: 3rem;
+}
+header div p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #7a808c;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  /* align-items: baseline; */
+}
+header ul li {
+  margin-right: 4rem;
+  list-style: none;
+  cursor: pointer;
+}
+header ul li a {
+  text-decoration: none;
+  color: #7a808c;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* code nav burger */
+/* header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--back);
 }
 
 nav ul {
-    position: fixed;
-    top: 4rem;
-    right: -100%;
-    background-color: var(--primary-yellow);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    width: 100%;
-    min-height: 100vh;
-    z-index: 1;
-    transition: all 1s;
+  position: fixed;
+  top: 4rem;
+  right: -100%;
+  background-color: var(--primary-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  transition: all 1s;
 }
 
 nav ul li {
-    list-style: none;
-    cursor: pointer;
-    transition: all 0.3s;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--body-text);
-    font-size: 1rem;
-    font-weight: 700;
-    transition: all 0.3s;
+  text-decoration: none;
+  color: var(--body-text);
+  font-size: 1rem;
+  font-weight: 700;
+  transition: all 0.3s;
 }
 
 nav ul li a:focus,
 nav ul li a:hover {
-    color: var(--color4);
+  color: var(--back);
 }
 
 .menu-burger div {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    background-color: var(--body-text);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.6s ease;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: var(--body-text);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.6s ease;
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .show-menu {
-    right: 0;
+  right: 0;
 }
 .no-move {
-    overflow: hidden;
-    /*background-color: rgba(0, 0, 0, 0.6);*/
+  overflow: hidden;
+} */
+.menu-burger {
+  display: none;
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem;
+  gap: 1rem;
+}
+.home-container-text h1 {
+  font-size: 4rem;
+  width: 50%;
+}
+.home-container-text p {
+  font-size: 1rem;
+  width: 30%;
+  padding: 2rem 0;
+}
+.btn-container button {
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 1rem;
+  margin: 1rem;
+}
+.btn-contactar {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  background: #f5e269;
+  box-shadow: 5px 5px 10px #d3c25a, -5px -5px 10px #ffff78;
+}
+.btn-saber {
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  background: #f2f3f7;
+  box-shadow: 5px 5px 10px #d0d1d4, -5px -5px 10px #ffffff;
 }
