@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-    <script defer src="js/main.js"></script>
-    <title>Nectare | Portfolio</title>
-  </head>
-  <body>
-    <header>
-      <div>
-        <p>Nectare</p>
-      </div>
-      <nav>
-        <ul id="ul">
-          <li><a href="#">inicio</a></li>
-          <li><a href="#">sobre nosotros</a></li>
-          <li><a href="#">servicios</a></li>
-          <li><a href="#">trabajos</a></li>
-          <li><a href="#">contacto</a></li>
-        </ul>
-      </nav>
-      <div class="menu-burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-    </header>
-    <main>
-      <div class="home-container">
-        <div class="home-container-text">
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
-          </p>
-          <div class="btn-container">
-            <button class="btn-contactar">Contactar</button>
-            <button class="btn-saber">Saber más</button>
-          </div>
-        </div>
-        <div class="home-container-img">
-          <img
-            class="icon-main"
-            src="media/undraw_programming_re_kg9v 1.svg"
-            alt=""
-            title=""
-          />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/1bb6d48af2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/style.css" />
+  <script defer src="js/main.js"></script>
+  <title>NECTARE</title>
+</head>
+
+<body>
+  <header>
+      <h1>nectare</h1>
+    <nav>
+      <ul id="ul">
+        <li><a href="#home">inicio</a></li>
+        <li><a href="#nosotros">sobre nosotros</a></li>
+        <li><a href="#servicios">servicios</a></li>
+        <li><a href="#">trabajos</a></li>
+        <li><a href="#">contacto</a></li>
+      </ul>
+    </nav>
+    <div class="menu-burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+  <main>
+    <section class="home__section" id="home">
+      <div class="home__section-text">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.</p>
+        <div class="btn__container">
+          <a href="#" class="btn-contactar">Contactar</a>
+          <a href="#" class="btn-mas">Saber más</a>
         </div>
       </div>
-      <!-- Abuot nectare -->
-      <div about-container></div>
-    </main>
-    <footer></footer>
-  </body>
+      <div class="home__section-img">
+        <img src="media/home-img.svg" alt="" title="" />
+      </div>
+    </section>
+    
+    <section class="nosotros__section" id="nosotros">
+
+    </section>
+
+    <section class="servicios__section" id="servicios">
+      <h2>SERVICIOS</h2>
+      <div class="servicios__container">
+        <div class="servicio">
+          <h3>DISEÑO<br>WEB</h3>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="servicio">
+          <h3>DESARROLLO<br>WEB</h3>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <div class="servicio">
+          <h3>MARKETING<br>DIGITAL</h3>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
 </html>
